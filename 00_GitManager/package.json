@@ -1,0 +1,14 @@
+{
+  "name": "gitmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "GitManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Callmephil",
+  "license": "MIT",
+  "dependencies": {
+    "nodegit": "^0.24.3"
+  }
+}
