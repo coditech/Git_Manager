@@ -18,5 +18,9 @@ Simple Node Program to clone all students repositories. (Could be done in .SH)
 It should clone all submissions folder.
 
 ## Task List
-* [ ] Implement Update Function
-* [ ] Implement Arguments (DELETE, UPDATE, CLONE)
+* [x] Implement Update Function.
+* [x] Implement Arguments.
+* [x] Implement Exercises/Challenges Checkup.
+* [ ] Implement List of Exercises/Challenges to verify.
+* [ ] Implement more arguments e.g : completed exercises etc..
+* [ ] Cleanup the Code.
