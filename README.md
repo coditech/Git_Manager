@@ -11,8 +11,17 @@ Simple Node Program to clone all students repositories. (Could be done in .SH)
 ```
 
 ## Use
-```js
+
+#### Clone/Update Repository list.
+```sh
     node ./GitManager.js
+```
+#### Check Exercise/Challenges
+```sh
+    node ./GitManager.js check (exercise/challenge name) stepNumber
+    
+    e.g cv-styling : node ./GitManager check cv-styling 2
+    > return all student names that have not finished the exercise at step 2.
 ```
 
 It should clone all submissions folder.
@@ -24,3 +33,5 @@ It should clone all submissions folder.
 * [ ] Implement List of Exercises/Challenges to verify.
 * [ ] Implement more arguments e.g : completed exercises etc..
 * [ ] Cleanup the Code.
+* [ ] Implement Code reading.
+* [ ] Implement Code Compare (with others students)
