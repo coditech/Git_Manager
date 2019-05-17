@@ -68,7 +68,7 @@ const cloneRepos = () => {
 
 const checkExerciseByName = (path) =>
 {
-  const badPeeps = [];
+  const badPeeps = [], goodpeeps = [];
   fs.readdir('../', function(err, items) {
     for (var i = 0; i < items.length; i++) {
       if (
@@ -81,12 +81,13 @@ const checkExerciseByName = (path) =>
       const fullPath = '../' + items[i] + '/' + path;
       const studentName = items[i];
       
-      if (!fs.existsSync(fullPath)) {
+      if (!fs.existsSync(fullPath))
         badPeeps.push(studentName);
-        console.log(`${studentName} => Did not complete the exercise : ${path}`);
-      }
+      else
+        goodpeeps.push(studentName);
     }
-    console.log(JSON.stringify(badPeeps));
+    console.log(`${JSON.stringify(badPeeps)} => Did not complete the exercise : ${path}`);
+    console.log(`${JSON.stringify(goodpeeps)} => Did complete the exercise : ${path}`)
   });
 }
 
