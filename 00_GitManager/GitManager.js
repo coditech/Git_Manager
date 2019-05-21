@@ -30,7 +30,7 @@ const RepositoryList = [
 ];
 
 const exercisesFilePaths = {
-  'cv-styling': ['Exercises/CV-Styling/public/style1/style.css', 'Exercises/CV-Styling/public/style2/style.css'],
+  'cv-styling': ['Exercises/CV-Styling/public/style1/style.css', 'Exercises/CV-Styling/public/style2/style.css', 'Exercises/CV-Styling/public/style3/style.css'],
 }
 
 var rmDir = function(dir, rmSelf) {
@@ -60,9 +60,11 @@ const cloneRepos = () => {
       rmDir(`../${elem[1]}`);
       console.log(`Updating : ${elem[1]}...`);
     }
-    
-    Git.Clone(elem[0], "../" + elem[1]);
-    console.log(`Completed : ${elem[1]}`);
+
+    Git.Clone(elem[0], "../" + elem[1]).then(function(repo) {
+      if (repo)
+        console.log(`Completed : ${elem[1]}`);
+    })
   });
 };
 
