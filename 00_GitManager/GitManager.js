@@ -20,7 +20,6 @@ const RepositoryList = [
   ["https://github.com/ridaFD/Submissions", "RidaFD"],
   ["https://github.com/salamab/Submissions", "Salam_M"],
   ["https://github.com/shirak96/Submissions", "Shirak"],
-  ["https://github.com/Sousetk/Submissions", "Salam_K"],
   ["https://github.com/TheAwadianMan/Submissions", "OmarAwad"],
   ["https://github.com/amanihaki/Submissions", "Amani"],
   ["https://github.com/AshrafJurdi/Submissions", "Ashraf"],
