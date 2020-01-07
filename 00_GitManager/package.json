@@ -9,6 +9,6 @@
   "author": "Callmephil",
   "license": "MIT",
   "dependencies": {
-    "nodegit": "^0.24.3"
+    "nodegit": "^0.26.3"
   }
 }
